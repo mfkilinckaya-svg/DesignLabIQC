@@ -1,0 +1,191 @@
+1
+00:00:05,246 --> 00:00:10,250
+Every laboratory that runs a control material has to decide where to put the limits.
+
+2
+00:00:10,300 --> 00:00:16,158
+Put them wide and nothing ever fails: the chart looks calm, but a real shift would pass unnoticed.
+
+3
+00:00:16,208 --> 00:00:20,603
+Put them tight and the chart flags something every week, most of it noise.
+
+4
+00:00:20,653 --> 00:00:23,161
+The question is not whether to have limits.
+
+5
+00:00:23,211 --> 00:00:24,805
+It is where they come from.
+
+6
+00:00:27,681 --> 00:00:32,085
+Most limits are taken from the control manufacturer's assigned range.
+
+7
+00:00:32,135 --> 00:00:36,931
+That range is set to cover many laboratories, many analysers and many lots.
+
+8
+00:00:36,981 --> 00:00:38,437
+It is deliberately wide.
+
+9
+00:00:38,487 --> 00:00:48,327
+On our own analysers, the range defined in the laboratory system was between one and a half and seven times wider than the scatter we actually observed.
+
+10
+00:00:48,377 --> 00:00:54,614
+A limit seven times wider than the noise cannot detect a shift of one or two standard deviations.
+
+11
+00:00:54,664 --> 00:00:55,858
+It is not a control.
+
+12
+00:00:55,908 --> 00:00:57,037
+it is a formality.
+
+13
+00:01:00,195 --> 00:01:08,944
+The alternative starts with one number: the coefficient of variation your own analyser actually produces, on the control level you actually run.
+
+14
+00:01:08,994 --> 00:01:16,944
+We compute it within each control lot, so that a change of target at a lot change does not inflate it, and we pool across the lots.
+
+15
+00:01:16,994 --> 00:01:20,513
+Where three analysers share a rule, we take the highest CV.
+
+16
+00:01:20,563 --> 00:01:26,235
+That is the conservative choice: a rule that works on the worst analyser works on the others.
+
+17
+00:01:29,314 --> 00:01:35,789
+The second number is the allowable total error: how much a result may be wrong before it matters clinically.
+
+18
+00:01:35,839 --> 00:01:44,265
+This is a specification, not a measurement, and it comes from published sources: biological variation, external quality schemes, regulators.
+
+19
+00:01:44,315 --> 00:01:48,594
+Dividing it by your CV gives the allowable error in standard deviations.
+
+20
+00:01:48,644 --> 00:01:50,058
+This is the sigma metric.
+
+21
+00:01:50,108 --> 00:01:56,826
+It says how much room there is between the noise of the method and the point where the error becomes a problem.
+
+22
+00:01:59,931 --> 00:02:01,864
+Not all of that room is available.
+
+23
+00:02:01,914 --> 00:02:11,841
+If the method shifts, five per cent of results will exceed the allowable error once the shift reaches the allowable error minus one point six five standard deviations.
+
+24
+00:02:11,891 --> 00:02:16,408
+That is the critical shift: the smallest shift the control rule has to catch.
+
+25
+00:02:16,458 --> 00:02:22,839
+If it comes out negative, no rule can catch it, because the noise alone already exceeds the allowable error.
+
+26
+00:02:22,889 --> 00:02:27,827
+That is what happens to MCHC under the tightest biological-variation specification.
+
+27
+00:02:30,965 --> 00:02:36,821
+A rule is a limit at K standard deviations and a count n of control results per event.
+
+28
+00:02:36,871 --> 00:02:38,002
+Two things follow.
+
+29
+00:02:38,052 --> 00:02:44,672
+The chance the rule fires when nothing is wrong, false rejection, P F R, depends only on K and n.
+
+30
+00:02:44,722 --> 00:02:53,009
+The chance it fires when the critical shift has happened, error detection, P E D, depends on K, n and the critical shift.
+
+31
+00:02:53,059 --> 00:02:56,205
+Tighten K and P E D goes up, but so does P F R.
+
+32
+00:02:56,255 --> 00:03:00,304
+The whole design is choosing where on that trade-off to sit.
+
+33
+00:03:00,354 --> 00:03:08,294
+We set a budget: false rejection under one and a half per cent per control event, combined across all three levels.
+
+34
+00:03:11,679 --> 00:03:16,243
+The three levels are measured together, and any one of them can reject the run.
+
+35
+00:03:16,293 --> 00:03:17,900
+So the probabilities combine.
+
+36
+00:03:17,950 --> 00:03:23,283
+A rule that costs half a per cent at each level costs one and a half per cent for the event.
+
+37
+00:03:23,333 --> 00:03:32,867
+That is why the budget is set per event, not per level, and why a level with plenty of sigma can be run tighter, spending the budget where detection matters most.
+
+38
+00:03:35,786 --> 00:03:39,279
+The result is an action limit in the units of the measurement.
+
+39
+00:03:39,329 --> 00:03:48,628
+Most laboratory systems apply a fixed three-standard-deviation rule, so the last step is to give the system an SD such that three of them equal your action limit.
+
+40
+00:03:48,678 --> 00:03:52,461
+From then on the system is enforcing your rule under its own name.
+
+41
+00:03:55,267 --> 00:04:00,538
+One more thing, which we only saw when we applied the rules back to seven months of data.
+
+42
+00:04:00,588 --> 00:04:02,352
+The limits sit around a target.
+
+43
+00:04:02,402 --> 00:04:12,390
+If the target was set elsewhere, by the manufacturer, or by a single analyser, your own analysers sit off-centre, and a tight rule fires on the offset, not on a fault.
+
+44
+00:04:12,440 --> 00:04:16,985
+In our data the false rejection rate more than tripled for that reason alone.
+
+45
+00:04:17,035 --> 00:04:22,488
+Setting the shared target to the pooled mean of the analysers brought it back within budget.
+
+46
+00:04:22,538 --> 00:04:24,302
+The rule from your imprecision.
+
+47
+00:04:24,352 --> 00:04:25,814
+the target from your mean.
+
+48
+00:04:25,864 --> 00:04:27,325
+Both, from the same data.
