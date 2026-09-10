@@ -8,7 +8,9 @@ authors:
     affiliation: "Helse Møre og Romsdal HF, Norway"
 version: "1.1.0"
 date-released: "2026-09-10"
-license: "MIT AND CC-BY-4.0"
+license:
+  - MIT
+  - CC-BY-4.0
 doi: "10.5281/zenodo.22685381"
 repository-code: "https://github.com/mfkilinckaya-svg/DesignLabIQC"
 keywords:
