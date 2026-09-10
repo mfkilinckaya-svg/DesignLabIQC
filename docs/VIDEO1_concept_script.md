@@ -110,4 +110,4 @@ One more thing, which we only saw when we applied the rules back to seven months
 
 ## Closing card (4:25–4:35)
 
-*Kontrolregler v1.1 · iqc-rule-designer · Repository DOI: to be added*
+*Kontrolregler v1.1 · iqc-rule-designer · Repository DOI: 10.5281/zenodo.22685381 · github.com/mfkilinckaya-svg/DesignLabIQC*

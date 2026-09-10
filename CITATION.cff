@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite both the software/data record and the accompanying article."
+type: dataset
+title: "Haematology IQC rule design from laboratory imprecision: data, analysis code and rule-design tools"
+authors:
+  - family-names: Kilinckaya
+    given-names: Muhammed
+    affiliation: "Helse Møre og Romsdal HF, Norway"
+version: "1.1.0"
+date-released: "2026-09-10"
+license: "MIT AND CC-BY-4.0"
+doi: "10.5281/zenodo.22685381"
+repository-code: "https://github.com/mfkilinckaya-svg/DesignLabIQC"
+keywords:
+  - quality control
+  - haematology
+  - Westgard rules
+  - sigma metric
+  - allowable total error
+  - biological variation
+preferred-citation:
+  type: article
+  title: "Analytical performance specification source, not analyser performance, determines whether haematology control rules are attainable: derivation and retrospective validation of level-specific rules from seven months of laboratory imprecision data"
+  authors:
+    - family-names: Kilinckaya
+      given-names: Muhammed
+  journal: "Biochemia Medica"
+  year: 2026
+  notes: "Submitted."

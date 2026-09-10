@@ -89,4 +89,4 @@ When you are satisfied, export. The file has one row per level with the rule, th
 
 ## Closing card (4:14–4:24)
 
-*iqc-rule-designer · single-file HTML · MIT licence · Repository DOI: to be added*
+*iqc-rule-designer · single-file HTML · MIT licence · Repository DOI: 10.5281/zenodo.22685381 · github.com/mfkilinckaya-svg/DesignLabIQC*
