@@ -1,0 +1,175 @@
+1
+00:00:04,872 --> 00:00:06,558
+This is the rule-design tool.
+
+2
+00:00:06,608 --> 00:00:07,737
+It is a single file.
+
+3
+00:00:07,787 --> 00:00:14,248
+you open it in a browser and it runs there, without installing anything and without sending data anywhere.
+
+4
+00:00:14,298 --> 00:00:17,287
+It comes loaded with our eighteen-parameter panel.
+
+5
+00:00:17,337 --> 00:00:29,628
+Each parameter has a header that summarises the state of its rule: the sigma metric, the combined false rejection rate, the same rate once an analyser offset is known, and the combined detection rate.
+
+6
+00:00:29,678 --> 00:00:32,976
+Green means the criterion is met, red means it is not.
+
+7
+00:00:34,919 --> 00:00:37,418
+The table has one row per control level.
+
+8
+00:00:37,468 --> 00:00:41,992
+The white boxes are inputs: target, CV, bias, number of controls and K.
+
+9
+00:00:42,042 --> 00:00:44,671
+Everything else is calculated as you type.
+
+10
+00:00:44,721 --> 00:00:56,890
+The columns are the same as in the spreadsheet: sigma, the critical shift, false rejection, detection, the action limit in concentration units and the SD to enter in the laboratory system.
+
+11
+00:00:56,940 --> 00:01:06,495
+Two columns are new: the analyser's offset from the target in SD units, and the false rejection rate you actually get once that offset is included.
+
+12
+00:01:08,487 --> 00:01:11,647
+Here is the point of the whole study, in one control.
+
+13
+00:01:11,697 --> 00:01:21,091
+This strip lists every allowable-error source we could trace for MCHC, computed from the same biological-variation data or taken from the published limit.
+
+14
+00:01:21,141 --> 00:01:23,930
+Choose the tightest, and sigma falls below one.
+
+15
+00:01:23,980 --> 00:01:27,818
+the critical shift is negative, and detection collapses to zero.
+
+16
+00:01:27,868 --> 00:01:32,818
+The noise of the method already exceeds the allowable error, and no rule can work.
+
+17
+00:01:32,868 --> 00:01:40,780
+Choose the external assessment limit, and the same analyser, the same CV and the same rule sit at sigma seven with full detection.
+
+18
+00:01:40,830 --> 00:01:43,064
+Nothing about the measurement changed.
+
+19
+00:01:43,114 --> 00:01:44,669
+Only the specification did.
+
+20
+00:01:44,719 --> 00:01:48,681
+The tool shows you the consequence before you commit to a source.
+
+21
+00:01:50,783 --> 00:01:53,765
+You can set K by hand and see the effect immediately.
+
+22
+00:01:53,815 --> 00:01:59,595
+Tighten level one to two SD, and the false rejection rate for the event jumps to almost ten per cent.
+
+23
+00:01:59,645 --> 00:02:00,761
+the header turns red.
+
+24
+00:02:00,811 --> 00:02:02,511
+Or you can let the tool search.
+
+25
+00:02:02,561 --> 00:02:13,006
+The search looks for the rule set that stays within the false rejection budget, one and a half per cent per event by default, and meets the detection requirement for that parameter.
+
+26
+00:02:13,056 --> 00:02:20,236
+Among those it picks the one closest to the rule you already have, so it does not rearrange a scheme that is already working.
+
+27
+00:02:20,286 --> 00:02:25,425
+Here it moves level one only as far as it must, and pays for it by widening the other two.
+
+28
+00:02:25,475 --> 00:02:29,040
+The meter shows how much of the budget each level is spending.
+
+29
+00:02:31,116 --> 00:02:33,264
+The tool is not limited to our panel.
+
+30
+00:02:33,314 --> 00:02:38,575
+Export your control results with analyte, level, lot, analyser and value, and load them.
+
+31
+00:02:38,625 --> 00:02:45,535
+For each parameter and level it computes the pooled within-lot CV of each analyser and carries the highest forward.
+
+32
+00:02:45,585 --> 00:02:48,953
+sets the target to the pooled mean of all your analysers.
+
+33
+00:02:49,003 --> 00:02:52,616
+and reports how far the worst analyser sits from that target.
+
+34
+00:02:52,666 --> 00:03:03,605
+That offset is written into the bias field, so the false rejection rate you see is the one you will actually get, not the one you would get if every analyser were perfectly centred.
+
+35
+00:03:03,655 --> 00:03:13,861
+For MCHC, the worst analyser sits zero point eight SD from the pooled target, and the level-one false rejection rate with that offset is several times the nominal rate.
+
+36
+00:03:16,004 --> 00:03:22,989
+Now suppose the target were the value the laboratory system had in force, 32.5, instead of the pooled mean of 32.98.
+
+37
+00:03:23,039 --> 00:03:28,801
+The worst analyser would then sit almost half a unit further away, about two point six per cent.
+
+38
+00:03:28,851 --> 00:03:30,270
+Enter that as the offset.
+
+39
+00:03:30,320 --> 00:03:39,140
+The rule has not changed, the CV has not changed, and the plain false rejection column does not move, but the rate with the offset climbs sharply.
+
+40
+00:03:39,190 --> 00:03:51,070
+That is what happened in our retrospective test: the same rules rejected two and a half per cent of control events against the old targets, and under one per cent once the targets were re-centred.
+
+41
+00:03:51,120 --> 00:03:53,823
+The tool lets you see that before it happens.
+
+42
+00:03:55,895 --> 00:03:57,660
+When you are satisfied, export.
+
+43
+00:03:57,710 --> 00:04:07,276
+The file has one row per level with the rule, the action limit, and the SD to enter in your laboratory system so that its own three-SD rule lands on your limit.
+
+44
+00:04:07,326 --> 00:04:16,227
+The Method and references tab inside the tool documents every calculation, with the same formulas as the spreadsheet and the references behind them.
