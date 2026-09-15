@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it together with the accompanying article (Biochemia Medica, submitted 2026)."
+message: "If you use this repository, please cite it together with the accompanying article (Clinica Chimica Acta, submitted 2026)."
 title: "Haematology IQC rule design from laboratory imprecision: data, analysis code and rule-design tools"
 authors:
   - family-names: Kilinckaya
     given-names: Muhammed
     affiliation: "Helse Møre og Romsdal HF, Norway"
-version: "1.1.3"
-date-released: "2026-09-10"
+version: "1.2.0"
+date-released: "2026-09-15"
 license: MIT
 repository-code: "https://github.com/mfkilinckaya-svg/DesignLabIQC"
 keywords:

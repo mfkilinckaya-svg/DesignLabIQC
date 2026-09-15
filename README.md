@@ -2,8 +2,8 @@
 
 Data, code and tools accompanying the manuscript
 
-> *Analytical performance specification source, not analyser performance, determines whether haematology control rules are attainable: derivation and retrospective validation of level-specific rules from seven months of laboratory imprecision data.*
-> Submitted to *Biochemia Medica*, 2026.
+> *Deriving haematology control rules from laboratory imprecision: the decisive role of the allowable error source.*
+> Submitted to *Clinica Chimica Acta*, 2026.
 
 The central claim is that internal quality control rules should be derived from the imprecision a laboratory actually measures and from a target taken from its own pooled analyser mean, not from manufacturer-assigned ranges; and that for several haematology parameters whether a rule looks attainable at all depends more on the chosen allowable-error source than on the analyser.
 
@@ -16,7 +16,7 @@ The central claim is that internal quality control rules should be derived from 
 | `data/` | `qc_measurements_2026-01_2026-07.csv` — all 75,124 control results, 19 parameters, three Sysmex XR-Series analysers, 1 Jan–31 Jul 2026 (operator identifiers removed). `beaker_defined_vs_observed.csv` — per control block, the SD defined in the LIS against the SD observed. `measured_cv_target_offset.csv` — the per-level values loaded into the tool. See `docs/DATA_DICTIONARY.md`. |
 | `analysis/` | Python scripts that reproduce every number in the manuscript from `data/`: parsing (`parse.py`), imprecision (`cv.py`), analyser deviation and its decomposition (`deviation.py`), APS-source hierarchy and rule selection (`hier2.py`), figures (`fig3.py`, `figs.py`). |
 | `results/` | Outputs of the analysis: final TEa source and rule per parameter, retrospective rejection rates under three target configurations, sigma spread across APS sources, analyser deviations. |
-| `figures/` | Figures 1–4 of the manuscript, grayscale, 300 dpi TIFF with PNG previews. |
+| `figures/` | Figures 1–4 of the manuscript. Root: grayscale, 300 dpi TIFF with PNG previews (original submission). `cca/`: colour versions as vector PDF and 1000 dpi TIFF, produced by `analysis/figs_cca.py`. |
 | `docs/` | Data dictionary; scripts (as recorded) of the two supplementary videos; `import_demo.csv` used in Video 2. |
 | `videos/` | **Supplementary Video 1** (concept, 4:35) and **Supplementary Video 2** (tool walkthrough, 4:24), MP4 1080p with English narration and captions, plus `.srt` subtitles. `source/video_sources.zip` regenerates both videos. |
 
@@ -30,6 +30,7 @@ python cv.py
 python deviation.py
 python hier2.py        # ~20 min: exhaustive rule search per parameter
 python figs.py && python fig3.py
+python figs_cca.py      # colour vector figures from results/ and the tool's panel data
 ```
 
 The raw monthly Beaker exports are not deposited because they carry operator names; the deduplicated, anonymised result set they reduce to is `data/qc_measurements_2026-01_2026-07.csv`, and every script downstream of `parse.py` runs from that file.

@@ -1,0 +1,1170 @@
+[
+ {
+  "id": "u0",
+  "panel": "Hematology",
+  "name": "Leukocytes",
+  "pedReq": 90,
+  "unit": "10⁹/L",
+  "tea": 10,
+  "teaSource": "Noklus",
+  "teaOptions": [
+   {
+    "label": "Rili-BAEK",
+    "value": 6.5
+   },
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 7.11
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 7.72
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   },
+   {
+    "label": "CLIA 2025",
+    "value": 10
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 14.21
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 15.44
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 21.32
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 23.17
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 3.13204,
+    "cv": 2.38,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 0.313
+   },
+   {
+    "label": "L2",
+    "target": 6.96745,
+    "cv": 1.89,
+    "n": 3,
+    "k": 3,
+    "mfrRange": 0.4654
+   },
+   {
+    "label": "L3",
+    "target": 16.6479,
+    "cv": 1.75,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 1.0933
+   }
+  ],
+  "note": "Noklus and CLIA agree at 10%. The biological variation sources are far wider, so the tightest documented source was kept."
+ },
+ {
+  "id": "u1",
+  "panel": "Hematology",
+  "name": "Hemoglobin",
+  "pedReq": 90,
+  "unit": "g/dL",
+  "tea": 3.9,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 1.95
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 2.1
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 3.9
+   },
+   {
+    "label": "CLIA 2025",
+    "value": 4
+   },
+   {
+    "label": "Rili-BAEK",
+    "value": 4
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 4.19
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 5.84
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 6.29
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 6.26412,
+    "cv": 1.04,
+    "n": 2,
+    "k": 3.7,
+    "mfrRange": 0.2852
+   },
+   {
+    "label": "L2",
+    "target": 11.8806,
+    "cv": 0.7,
+    "n": 3,
+    "k": 3,
+    "mfrRange": 0.48
+   },
+   {
+    "label": "L3",
+    "target": 15.3939,
+    "cv": 0.65,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 0.62
+   }
+  ],
+  "note": "Moved off CLIA 7% to EFLM minimum 5.8%. Detection stays at 1.00 with the existing rule, so nothing was tightened."
+ },
+ {
+  "id": "u2",
+  "panel": "Hematology",
+  "name": "Erythrocytes",
+  "pedReq": 90,
+  "unit": "10¹²/L",
+  "tea": 4,
+  "teaSource": "CLIA 2025",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 2.01
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 2.2
+   },
+   {
+    "label": "CLIA 2025",
+    "value": 4
+   },
+   {
+    "label": "Rili-BAEK",
+    "value": 4
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 4.01
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 4.41
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 6.02
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 6.61
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 2.64227,
+    "cv": 1.08,
+    "n": 2,
+    "k": 3.3,
+    "mfrRange": 0.132
+   },
+   {
+    "label": "L2",
+    "target": 4.31013,
+    "cv": 0.77,
+    "n": 3,
+    "k": 3.5,
+    "mfrRange": 0.2135
+   },
+   {
+    "label": "L3",
+    "target": 5.11445,
+    "cv": 0.73,
+    "n": 2,
+    "k": 3.8,
+    "mfrRange": 0.2545
+   }
+  ],
+  "note": "All three sources clear the criteria with the same rule, and false alarms do not move at all, since Pfr does not depend on TEa. The choice here is policy, not arithmetic."
+ },
+ {
+  "id": "u3",
+  "panel": "Hematology",
+  "name": "Hematocrit",
+  "pedReq": null,
+  "unit": "L/L",
+  "tea": 5,
+  "teaSource": "Rili-BAEK",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 1.93
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 1.98
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 3.85
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 3.97
+   },
+   {
+    "label": "CLIA 2025",
+    "value": 4
+   },
+   {
+    "label": "Rili-BAEK",
+    "value": 5
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 5.78
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 5.95
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 0.189974,
+    "cv": 1.6,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 0.0191
+   },
+   {
+    "label": "L2",
+    "target": 0.352473,
+    "cv": 1.13,
+    "n": 3,
+    "k": 3.5,
+    "mfrRange": 0.0358
+   },
+   {
+    "label": "L3",
+    "target": 0.448842,
+    "cv": 1.11,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 0.0455
+   }
+  ],
+  "note": "L1 detection is capped by its own imprecision rather than by the rule."
+ },
+ {
+  "id": "u4",
+  "panel": "Hematology",
+  "name": "MCV",
+  "pedReq": 70,
+  "unit": "fL",
+  "tea": 3.63,
+  "teaSource": "BV Ricos (minimum)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 0.84
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 1.21
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 1.68
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 2.42
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 2.52
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 3.63
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 71.8942,
+    "cv": 1.07,
+    "n": 2,
+    "k": 4.1,
+    "mfrRange": 3.625
+   },
+   {
+    "label": "L2",
+    "target": 81.7844,
+    "cv": 0.83,
+    "n": 3,
+    "k": 3.3,
+    "mfrRange": 4.195
+   },
+   {
+    "label": "L3",
+    "target": 87.7626,
+    "cv": 0.81,
+    "n": 2,
+    "k": 4.1,
+    "mfrRange": 4.47
+   }
+  ],
+  "note": "Switch the source to BV EFLM and watch sigma fall from 8.1 to 2.0 with no change to the instrument. At that target the critical shift drops under 1 SD and no rule can find it. This analyte is the clearest demonstration that the appropriateness of a control rule is set by the chosen specification, not by the measurement."
+ },
+ {
+  "id": "u5",
+  "panel": "Hematology",
+  "name": "MCH",
+  "pedReq": null,
+  "unit": "pg",
+  "tea": 3.75,
+  "teaSource": "BV Ricos (minimum)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 0.93
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 1.25
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 1.85
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 2.5
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 2.78
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 3.75
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 23.7183,
+    "cv": 1.05,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 2.115
+   },
+   {
+    "label": "L2",
+    "target": 27.5697,
+    "cv": 0.88,
+    "n": 3,
+    "k": 3.3,
+    "mfrRange": 2.248
+   },
+   {
+    "label": "L3",
+    "target": 30.1053,
+    "cv": 0.75,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 2.44
+   }
+  ],
+  "note": "L2 widened from 3.0 to 3.3 to bring combined false alarms under budget. Detection is unaffected."
+ },
+ {
+  "id": "u6",
+  "panel": "Hematology",
+  "name": "MCHC",
+  "pedReq": null,
+  "unit": "g/dL",
+  "tea": 10,
+  "teaSource": "Noklus",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 0.63
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 0.64
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 1.26
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 1.27
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 1.88
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 1.91
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 32.9842,
+    "cv": 1.41,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 4.875
+   },
+   {
+    "label": "L2",
+    "target": 33.7052,
+    "cv": 1.13,
+    "n": 3,
+    "k": 3.3,
+    "mfrRange": 4.69
+   },
+   {
+    "label": "L3",
+    "target": 34.304,
+    "cv": 1.04,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 4.774
+   }
+  ],
+  "note": "At the EFLM minimum of 1.9% the allowable error was narrower than the safety margin itself, so the critical shift came out negative: the specification could not be met even with zero systematic error."
+ },
+ {
+  "id": "u7",
+  "panel": "Hematology",
+  "name": "RDW-CV",
+  "pedReq": null,
+  "unit": "%",
+  "tea": 4.05,
+  "teaSource": "BV EFLM (minimum)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 1.35
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 2.28
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 2.7
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 4.05
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 4.56
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 6.84
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 19.0244,
+    "cv": 0.94,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 1.86
+   },
+   {
+    "label": "L2",
+    "target": 16.8876,
+    "cv": 0.72,
+    "n": 3,
+    "k": 4,
+    "mfrRange": 1.64
+   },
+   {
+    "label": "L3",
+    "target": 15.3256,
+    "cv": 0.65,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 1.53
+   }
+  ],
+  "note": "Detection saturates under every rule, so tightening buys a narrower action limit rather than a higher Ped."
+ },
+ {
+  "id": "u8",
+  "panel": "Hematology",
+  "name": "Platelets",
+  "pedReq": 90,
+  "unit": "10⁹/L",
+  "tea": 13.44,
+  "teaSource": "BV Ricos (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 5.51
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 6.72
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 11.02
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 13.44
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 16.53
+   },
+   {
+    "label": "Noklus",
+    "value": 20
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 20.15
+   },
+   {
+    "label": "CLIA 2025",
+    "value": 25
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 89.9939,
+    "cv": 4.24,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 34.4
+   },
+   {
+    "label": "L2",
+    "target": 242.149,
+    "cv": 2.47,
+    "n": 3,
+    "k": 4.5,
+    "mfrRange": 35.7
+   },
+   {
+    "label": "L3",
+    "target": 545.625,
+    "cv": 1.56,
+    "n": 2,
+    "k": 4.5,
+    "mfrRange": 48.6
+   }
+  ],
+  "note": "L1 detection is modest but the combined figure reaches 1.00 because L2 and L3 saturate."
+ },
+ {
+  "id": "u9",
+  "panel": "Hematology",
+  "name": "Platelets fluorescent",
+  "pedReq": 90,
+  "unit": "10⁹/L",
+  "tea": 11.02,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 5.51
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 6.72
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 11.02
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 13.44
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 16.53
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 20.15
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 80.1841,
+    "cv": 2.29,
+    "n": 2,
+    "k": 2.7,
+    "mfrRange": 31.6
+   },
+   {
+    "label": "L2",
+    "target": 271.758,
+    "cv": 3.49,
+    "n": 3,
+    "k": 5,
+    "mfrRange": 79.2
+   },
+   {
+    "label": "L3",
+    "target": 549.559,
+    "cv": 1.94,
+    "n": 2,
+    "k": 6,
+    "mfrRange": 82.5
+   }
+  ],
+  "note": "The one genuine tightening in this revision. Dropping TEa from 20% to 16.5% left the old L1 rule of 4.0 with combined detection of 0.70, below the 0.90 requirement; 3.2 restores it to 0.92. L2 and L3 untouched."
+ },
+ {
+  "id": "u10",
+  "panel": "Hematology",
+  "name": "MPV",
+  "pedReq": null,
+  "unit": "fL",
+  "tea": 8.76,
+  "teaSource": "BV Ricos (minimum)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 1.88
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 2.92
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 3.76
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 5.64
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 5.84
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 8.76
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 8.57751,
+    "cv": 2.42,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0
+   },
+   {
+    "label": "L2",
+    "target": 9.49524,
+    "cv": 1.63,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 0
+   },
+   {
+    "label": "L3",
+    "target": 9.23973,
+    "cv": 1.25,
+    "n": 2,
+    "k": 3,
+    "mfrRange": 0
+   }
+  ],
+  "note": "No Noklus or CLIA limit exists for MPV. The Ricos minimum tier (8.76%) was the tightest traceable source with sigma above 3 at every level; the EFLM minimum (5.64%) fell short at L1."
+ },
+ {
+  "id": "u11",
+  "panel": "Hematology",
+  "name": "Reticulocyte hemoglobin",
+  "pedReq": null,
+  "unit": "pg",
+  "tea": 10,
+  "teaSource": "Noklus",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 1.18
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 2.35
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 3.53
+   },
+   {
+    "label": "Noklus",
+    "value": 10
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 24.0313,
+    "cv": 1.1,
+    "n": 2,
+    "k": 5,
+    "mfrRange": 2.5
+   },
+   {
+    "label": "L2",
+    "target": 24.7997,
+    "cv": 1.15,
+    "n": 3,
+    "k": 5,
+    "mfrRange": 2.58
+   },
+   {
+    "label": "L3",
+    "target": 25.6616,
+    "cv": 1.45,
+    "n": 2,
+    "k": 5,
+    "mfrRange": 2.67
+   }
+  ],
+  "note": "The three control levels span 25.0 to 26.7 pg, so they are three replicates at one concentration rather than three clinical regions. The material does not test the upper measuring range above 30 pg."
+ },
+ {
+  "id": "u12",
+  "panel": "Hematology",
+  "name": "Reticulocytes",
+  "pedReq": 70,
+  "unit": "10¹²/L",
+  "tea": 15.2,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 7.6
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 8.41
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 15.2
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 16.83
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 22.8
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 25.24
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 0.138841,
+    "cv": 3.51,
+    "n": 2,
+    "k": 3.4,
+    "mfrRange": 0.04365
+   },
+   {
+    "label": "L2",
+    "target": 0.0973202,
+    "cv": 3.43,
+    "n": 3,
+    "k": 3.3,
+    "mfrRange": 0.03
+   },
+   {
+    "label": "L3",
+    "target": 0.054143,
+    "cv": 4.76,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.01818
+   }
+  ],
+  "note": "Concentration runs downward across the levels here, unlike the rest of the panel."
+ },
+ {
+  "id": "u13",
+  "panel": "Hematology",
+  "name": "Lymphocytes abs.",
+  "pedReq": null,
+  "unit": "10⁹/L",
+  "tea": 14.94,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 7.47
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 8.8
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 14.94
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 17.6
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 22.41
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 26.4
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 1.14025,
+    "cv": 3.51,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.46
+   },
+   {
+    "label": "L2",
+    "target": 2.17347,
+    "cv": 2.74,
+    "n": 3,
+    "k": 3.5,
+    "mfrRange": 0.446
+   },
+   {
+    "label": "L3",
+    "target": 4.21725,
+    "cv": 2.14,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.864
+   }
+  ],
+  "note": "The Noklus limit of 15% applies to the percentage differential, not to the absolute count, so it is shown for reference only."
+ },
+ {
+  "id": "u14",
+  "panel": "Hematology",
+  "name": "Neutrophils abs.",
+  "pedReq": 70,
+  "unit": "10⁹/L",
+  "tea": 11.68,
+  "teaSource": "BV Ricos (optimal)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 8.75
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 11.68
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 17.5
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 23.35
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 26.25
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 35.03
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 1.29079,
+    "cv": 3.4,
+    "n": 2,
+    "k": 3.4,
+    "mfrRange": 0.256
+   },
+   {
+    "label": "L2",
+    "target": 3.16704,
+    "cv": 2.74,
+    "n": 3,
+    "k": 3.4,
+    "mfrRange": 0.495
+   },
+   {
+    "label": "L3",
+    "target": 8.23749,
+    "cv": 2.49,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 1.239
+   }
+  ],
+  "note": "Noklus publishes no limit for the absolute neutrophil count; the 15% figure is for the percentage."
+ },
+ {
+  "id": "u15",
+  "panel": "Hematology",
+  "name": "Monocytes abs.",
+  "pedReq": null,
+  "unit": "10⁹/L",
+  "tea": 27.42,
+  "teaSource": "BV EFLM (minimum)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 9.14
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 13.95
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 18.28
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 27.42
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 27.91
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 41.86
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 0.232183,
+    "cv": 8.16,
+    "n": 2,
+    "k": 4,
+    "mfrRange": 0.192
+   },
+   {
+    "label": "L2",
+    "target": 0.521094,
+    "cv": 7.43,
+    "n": 3,
+    "k": 4,
+    "mfrRange": 0.294
+   },
+   {
+    "label": "L3",
+    "target": 1.41584,
+    "cv": 5.71,
+    "n": 2,
+    "k": 4.2,
+    "mfrRange": 0.735
+   }
+  ],
+  "note": "No detection requirement is set for this parameter in the local specification."
+ },
+ {
+  "id": "u16",
+  "panel": "Hematology",
+  "name": "Eosinophils abs.",
+  "pedReq": null,
+  "unit": "10⁹/L",
+  "tea": 29.73,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 14.86
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 18.57
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 29.73
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 37.13
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 44.59
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 55.7
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 0.318988,
+    "cv": 6.71,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.186
+   },
+   {
+    "label": "L2",
+    "target": 0.7709,
+    "cv": 6.71,
+    "n": 3,
+    "k": 3.5,
+    "mfrRange": 0.4
+   },
+   {
+    "label": "L3",
+    "target": 1.9763,
+    "cv": 6.92,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.98
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "u17",
+  "panel": "Hematology",
+  "name": "Basophils abs.",
+  "pedReq": null,
+  "unit": "10⁹/L",
+  "tea": 18.21,
+  "teaSource": "BV EFLM (desirable)",
+  "teaOptions": [
+   {
+    "label": "BV EFLM (optimal)",
+    "value": 9.1
+   },
+   {
+    "label": "BV EFLM (desirable)",
+    "value": 18.21
+   },
+   {
+    "label": "BV Ricos (optimal)",
+    "value": 19.24
+   },
+   {
+    "label": "BV EFLM (minimum)",
+    "value": 27.31
+   },
+   {
+    "label": "BV Ricos (desirable)",
+    "value": 38.48
+   },
+   {
+    "label": "BV Ricos (minimum)",
+    "value": 57.73
+   }
+  ],
+  "levels": [
+   {
+    "label": "L1",
+    "target": 0.149895,
+    "cv": 4.48,
+    "n": 2,
+    "k": 3.5,
+    "mfrRange": 0.117
+   },
+   {
+    "label": "L2",
+    "target": 0.334817,
+    "cv": 3.42,
+    "n": 3,
+    "k": 3.5,
+    "mfrRange": 0.2652
+   },
+   {
+    "label": "L3",
+    "target": 0.801516,
+    "cv": 3.04,
+    "n": 2,
+    "k": 4.5,
+    "mfrRange": 0.6318
+   }
+  ],
+  "note": "The Noklus figure of 200% for basophil percentage is an outlier among the sources and is listed only for completeness."
+ }
+]
